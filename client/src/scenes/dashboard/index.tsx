@@ -1,8 +1,6 @@
 import { Box, useMediaQuery } from '@mui/material';
 import DashboardBox from '../../components/DashboardBox';
 
-type Props = {};
-
 const gridTemplateLargeScreens = `
   "a b c"
   "a b c"
@@ -50,7 +48,7 @@ const gridTemplateSmallScreens = `
   "j"
 `;
 
-const Dashboard = (props: Props) => {
+const Dashboard = () => {
   const isAboveMediumScreens = useMediaQuery('(min-width: 1200px');
   // const { pallete } = useTheme();
   return (
