@@ -1,5 +1,5 @@
 import { Box, useMediaQuery } from '@mui/material';
-import DashboardBox from '../../components/DashboardBox';
+import DashboardBox from '@/components/DashboardBox';
 
 const gridTemplateLargeScreens = `
   "a b c"
