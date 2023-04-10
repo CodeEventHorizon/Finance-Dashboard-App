@@ -7,6 +7,7 @@ const TransactionSchema = new Schema(
   {
     buyer: {
       type: String,
+      required: true,
     },
     amount: {
       type: String,
