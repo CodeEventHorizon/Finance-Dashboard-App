@@ -7,15 +7,6 @@ const TransactionSchema = new Schema(
   {
     buyer: {
       type: String,
-      currency: 'USD',
-      set: (v) => {
-        const value = parseFloat(v.replace('$', ''));
-        const formattedValue = accounting.formatMoney(value, {
-          symbol: '$',
-          precision: 2,
-        });
-        return formattedValue;
-      },
     },
     amount: {
       type: String,
