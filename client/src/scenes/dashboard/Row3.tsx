@@ -176,7 +176,30 @@ const Row3 = () => {
           ))}
         </FlexBetween>
       </DashboardBox>
-      <DashboardBox gridArea="j"></DashboardBox>
+      <DashboardBox gridArea="j">
+        <BoxHeader
+          title="Overall Summary and Explanation Data"
+          sideText="+15%"
+        />
+        <Box
+          height="15px"
+          margin="1.25rem 1rem 0.4rem 1rem"
+          bgcolor={palette.primary[800]}
+          borderRadius="1rem">
+          <Box
+            height="15px"
+            width="40%"
+            bgcolor={palette.primary[600]}
+            borderRadius="1rem"></Box>
+        </Box>
+        <Typography margin="0 1rem" variant="h6">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          semper turpis in porttitor vulputate. Praesent ligula velit, egestas
+          ac euismod ut, consequat et orci. Pellentesque suscipit tellus vitae
+          metus gravida, eget viverra odio vestibulum. Quisque varius ipsum eu
+          cursus convallis. Etiam et mollis nisi. Vivamus et sagittis erat,
+        </Typography>
+      </DashboardBox>
     </>
   );
 };
